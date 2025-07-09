@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Contato</title>
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body bgcolor="#CD853F">
+     <header>
+         <a href="index.html"><button type="voltar">Voltar a Tela Inicial</button></a> <!-- Aqui foi inserido um botão com link utilizando a tag <a> para o index-->
+     </header>
+     <div class ="box">
+    <h1>Contate-nos<img src="imagens/icones/icone-telefone.png"> </h1> 
+    <form>
+       <label>Nome completo:*<br>
+            <input type="text" name="nome" required>
+       </label><br><br>
+       <label>E-mail:*<br>
+            <input type="email" name="email" required>
+       </label><br><br>
+       <label>Telefone:<br>
+            <input type="tel" name="telefone" pattern="^?\d2?[\s-]?\d{4,5}-?\d{4}$">
+       </label><br><br>
+       <label>Assunto:*<br>
+            <select name="assunto" required>
+                <option value="">Selecione...</option>
+                <option>Informações gerais</option>
+                <option>Reclamação</option>
+                <option>Sugestão</option>
+                <option>Elogio</option>
+                <option>Pedido especial</option>
+                <option>Outros</option>
+            </select>
+       </label><br><br>
+       <label>Mensagem*<br>
+            <textarea name="mensagem" required minlength="10"></textarea>
+       </label><br><br>
+       <button type="submit">Enviar</button>
+     </div>
+    </form>
+</body>
+</html>

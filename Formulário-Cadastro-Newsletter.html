@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro / Newsletter</title>
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body bgcolor="#CD853F">
+     <header>
+         <a href="index.html"><button type= "voltar">Voltar a Tela Inicial</button></a> <!-- Aqui foi inserido um botão com link utilizando a tag <a> para o index-->
+     </header>
+     <div class= "box">
+    <h1>Cadastre-se em nosso site e receba a nossa Newsletter. <img src="imagens/icones/newsletter.png" width="42" height="42"></h1> 
+    <form>
+
+       <!-- Seção 1 - Dados Pessoais -->
+       <h2>Dados Pessoais:</h2>
+       <label>Nome completo:*<br>
+            <input type="text" name="nome" required>
+       </label><br><br>
+       <label>Email:*<br>
+            <input type="email" name="email" required>
+       </label><br><br>
+       <label>Telefone:*<br>
+            <input type="tel" name="telefone" required pattern="^?\d2?[\s-]?\d{4,5}-?\d{4}$">
+       </label><br><br>
+       <label>Data de nascimento:<br>
+            <input type="date" name="nascimento">
+       </label><br><br>
+
+       <!-- Seção 2 - Endereço -->
+       <h2>Endereço</h2>
+       <label>Logradouro:*<br>
+            <input type="text" name="rua" required>
+       </label><br><br>
+       <label>Número:*<br>
+            <input type="number" name="numero" required>
+       </label><br><br>
+       <label>Bairro:*<br>
+            <input type="text" name="bairro" required>
+       </label><br><br>
+       <label>CEP:*<br>
+            <input type="text" name="cep" required pattern="[0-9]{5}-[0-9]{3}" placeholder="00000-000">
+       </label><br><br>
+
+       <!-- Seção 3 - Preferências -->
+       <h2>Preferências</h2>
+       <label><input type="checkbox" name="preferencias" value="paes"> Pães artesanais</label><br>
+       <label><input type="checkbox" name="preferencias" value="doces"> Doces e bolos</label><br>
+       <label><input type="checkbox" name="preferencias" value="salgados"> Salgados</label><br>
+       <label><input type="checkbox" name="preferencias" value="diet"> Produtos diet/light</label><br>
+       <label><input type="checkbox" name="preferencias" value="integrais"> Produtos integrais</label><br><br>
+       
+       <!-- Seção 4 - Termos -->
+       <h2>Termos</h2>
+       <label><input type="checkbox" name="promocoes" required> Aceita receber promoções por email*</label><br>
+       <label><input type="checkbox" name="termos" required> Aceita os termos de uso*</label><br><br>
+       <button type="submit">Cadastrar</button>
+     </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback</title>
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body bgcolor="#CD853F">
+    <header>
+        <a href="index.html"><button type="voltar">Voltar a Tela Inicial</button></a> <!-- Aqui foi inserido um botão com link utilizando a tag <a> para o index-->
+    </header>
+    <div class= "box">
+    <h2>💬 Formulário de Feedback</h2>
+    <form>
+       <label>Nome: <input type="text" name="nome"></label><br>
+       <label>Email: <input type="email" name="email"></label><br>
+       <label>Produto/Serviço:
+            <select required>
+                <option>🥖 Pães tradicionais</option>
+                <option>🍰 Doces e bolos</option>
+                <option>🥐 Salgados</option>
+                <option>👥 Atendimento</option>
+                <option>🏠 Ambiente</option>
+                <option>💲 Preços</option>
+            </select>
+       </label><br>
+       <p>Avaliação:</p>
+       <label><input type="radio" name="avaliacao" required>🌟 Excelente</label>
+       <label><input type="radio" name="avaliacao">👍 Bom</label>
+       <label><input type="radio" name="avaliacao">😐 Regular</label>
+       <label><input type="radio" name="avaliacao">👎 Ruim</label><br>
+       <label>Comentários:<br> <textarea placeholder="Escreva aqui..."></textarea></label><br>
+       <label><input type="checkbox">👍 Recomendaria?</label>
+       <label><input type="checkbox">📰 Autoriza publicação?</label>
+       <button type="submit">Enviar</button>
+    </div>
+    </form>
+</body>
+</html>

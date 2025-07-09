@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Pedido Especial</title>
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body bgcolor="#CD853F">
+     <header>
+         <a href="index.html"><button type="voltar">Voltar a Tela Inicial</button></a> <!-- Aqui foi inserido um botão com link utilizando a tag <a> para o index-->
+     </header>
+     <div class= "box">
+    <h1>Pedidos Especiais</h1>
+    <form>
+       <!-- Seção 1: Dados do Cliente -->
+       <h2>Dados do Cliente</h2>
+       <label>Nome completo:*<br>
+            <input type="text" name="nome" required>
+       </label><br><br>
+       <label>Telefone:*<br>
+            <input type="tel" name="telefone" required pattern="^?\d2?[\s-]?\d{4,5}-?\d{4}$">
+       </label><br><br>
+       <label>Email:*<br>
+            <input type="email" name="email" required>
+       </label><br><br>
+       <!-- Seção 2: Detalhes do Pedido -->
+       <h2>Detalhes do Pedido</h2>
+       <p>Tipo de produto:*</p>
+       <label><input type="radio" name="tipo" value="bolo" required> Bolo</label><br>
+       <label><input type="radio" name="tipo" value="torta"> Torta</label><br>
+       <label><input type="radio" name="tipo" value="salgados"> Salgados</label><br><br>
+       <label>Sabor/Recheio:*<br>
+            <select name="sabor" required>
+                <option value="">Selecione...</option>
+                <option>Chocolate</option>
+                <option>Morango</option>
+                <option>Baunilha</option>
+                <option>Doce de leite</option>
+                <option>Nutella</option>
+                <option>Outro</option>
+                <option>Coxinha Cremosa</option>
+                <option>Torta de Frango</option>
+            </select>
+       </label><br><br>
+       <p>Tamanho:*</p>
+       <label><input type="radio" name="tamanho" value="pequeno" required> Pequeno</label><br>
+       <label><input type="radio" name="tamanho" value="medio"> Médio</label><br>
+       <label><input type="radio" name="tamanho" value="grande"> Grande</label><br><br>
+       <label>Data de entrega:*<br>
+            <input type="date" name="data_entrega" required>
+       </label><br><br>
+
+       <!-- Seção 3: Informações Adicionais -->
+       <h2>Informações Adicionais:</h2>
+       <label>Observações especiais:<br>
+            <textarea name="observacoes"></textarea>
+       </label><br><br>
+       <label>Orçamento máximo (R$):<br>
+            <input type="number" name="orcamento" min="0" step="0.01">
+       </label><br><br>
+       <button type="submit">Enviar Pedido</button>
+  </div>
+    </form>
+</body>
+</html>
