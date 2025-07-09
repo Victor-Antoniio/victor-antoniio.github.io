@@ -196,7 +196,7 @@ img {
 
 }
 
-.ul, .table, .th, td {
+.ul {
     flex: 0 1 300px;
     border-radius: 8px;
     padding: 1rem;
@@ -212,9 +212,15 @@ img {
     }
 
     table {
-        font-size: 0.9rem;
-        overflow-x: auto;
-        display: block;
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    th, td {
+        padding: 12px;
+        text-align: center;
+        background-color: #FFE4C4
     }
 
     section div {
