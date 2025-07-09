@@ -1,9 +1,8 @@
 /* Estilos CSS*/
-body {
+body {     /* estilos body*/
     font-family: Georgia, serif;
     background-color: #FAE5D3;
     color: #5C3317;
-    margin: 0 auto;
     padding: 0;
 }
 
@@ -36,6 +35,13 @@ main, section, form {
     margin: auto;
     padding: 20px;
 }
+
+main, section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 th {
     background-color: #CD853F;
     color: white;
@@ -49,11 +55,20 @@ form {
     border-radius: 10px;
     box-shadow: 0 0 10px #D2B48C;
 }
+    form {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+}
 
 form label {
     display: block;
     font-size: 1rem;
 }
+
+/* Estilos inputs */
 
 input[type="name"],
 input[type="text"],
@@ -76,6 +91,7 @@ textarea {
     height: 80px;
 }
 
+/* Estilos botões*/
 button[type="submit"] {
     background-color: #A0522D;
     color: white;
@@ -125,6 +141,8 @@ button[type="navegacao"]:hover {
     transform: scale(1.03);
 }
 
+/**/
+
 a {
     text-decoration: none;
     color: #8B0000;
@@ -161,10 +179,14 @@ section div {
 img {
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    max-width: 100%;
+    height: 0 auto; /*Mantém a proporção*/
 }
+
 
 .fotos-ambiente,.fotos-dos-produtos,.box {
     width: 1000px;
+    height: 0 auto;
     padding: 15px;
     border: 5px solid grey;
     margin: 20px;
@@ -182,4 +204,27 @@ img {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+}
+
+
+@media (max-width: 768px) {
+    header button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    table {
+        font-size: 0.9rem;
+        overflow-x: auto;
+        display: block;
+    }
+
+    section div {
+        width: 100%;
+        height: auto;
+    }
+
+    form {
+        padding: 15px;
+    }
 }
